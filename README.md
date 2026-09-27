@@ -13,6 +13,7 @@ Are you tired of seeing SIMPSON, OWEN, CAMPBELL, LEE, et. al. in the leaderboard
 * python3
 * IPS patcher, such as [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)
 * `200-p1.p1` (CRC: `28c83048`) from turmfast MAME ROM
+* MAME->.neo converter, such as [lithogen](https://github.com/carmiker/lithogen)
 
 ### Executing
 
