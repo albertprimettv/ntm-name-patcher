@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# CHANGELOG
-# =========
+# Version History
+# ===============
 # 2026-11-15
 # - Randomize name list if more than 31 entries exist in input json
 #
