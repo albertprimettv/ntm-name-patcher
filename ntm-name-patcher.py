@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+# CHANGELOG
+# =========
+# 2026-11-15
+# - Randomize name list if more than 31 entries exist in input json
+#
+# 2026-0926
+# - Initial release
+
 import argparse
 import json
 import random
@@ -206,9 +214,10 @@ def readInput(filename: str) -> list:
                     inputs["cpu"].extend(random.sample(DEFAULT_NAMES, 31-length))
                 else:
                     if 31 < length:
-                        print(f"  -- Truncating last [{length-31}] names")
+                        print(f"  ++ Randomly selecting 31 names from [{length}] available names")
+                        inputs["cpu"] = random.sample(inputs["cpu"], 31)
             else:
-                print ("-- Skipping CPU leaderboard names")
+                print("-- Skipping CPU leaderboard names")
 
     except FileNotFoundError:
         print(f"Error: [{filename}] file was not found.")

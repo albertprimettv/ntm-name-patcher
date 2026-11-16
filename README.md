@@ -60,8 +60,8 @@ Notes
 - All strings will be stripped of leading/trailing spaces.
 - CPU and Player names will be truncated to 12 characters.
 - Title string will be truncated to 24 characters and centered.
-- Only the first 31 CPU names will be used.
-- If there are less than 31 CPU names, default names will fill the remainder.
+- If more than 31 unique CPU names are provided in the input file, 31 will be randomly selected.
+- If there are less than 31 unique CPU names, default names will fill the remainder.
 
 ## Implementation Notes
 ### All courses use the same list of names
@@ -71,9 +71,10 @@ Each course has its own set of pointer to the start of its leaderboard names.  F
 Implementation simplicity.
 
 ## Version History
-
-* 0.1
-  * Initial Release
+### 2026-11-15
+- Randomize name list if more than 31 entries exist in input json
+### 2026-0926
+- Initial release
 
 ## Acknowledgments
 
