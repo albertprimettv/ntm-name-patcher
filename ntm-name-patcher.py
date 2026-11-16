@@ -186,19 +186,19 @@ def readInput(filename: str) -> list:
 
             if "title" in data and isinstance(data["title"], str):
                 inputs["title"] = data["title"]
-                print (f"++ Setting title copyright to [{inputs["title"]}]")
+                print (f"++ Setting title copyright to [{inputs['title']}]")
             else:
                 print ("-- Skipping title screen change")
 
             if "player1" in data and isinstance(data["player1"], str):
                 inputs["player1"] = data["player1"]
-                print (f"++ Setting P1 name to [{inputs["player1"] }]")
+                print (f"++ Setting P1 name to [{inputs['player1'] }]")
             else:
                 print ("-- Default P1 name to [PLAYER 1]")
 
             if "player2" in data and isinstance(data["player2"], str):
                 inputs["player2"] = data["player2"]
-                print (f"++ Setting P2 name to [{inputs["player2"] }]")
+                print (f"++ Setting P2 name to [{inputs['player2'] }]")
             else:
                 print ("-- Default P2 name to [PLAYER 2]")
 
